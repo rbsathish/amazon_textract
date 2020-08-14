@@ -24,7 +24,7 @@ Create S3:
 
 	Go to the S3 bucket area. Just click on “Services” then “S3”
 	
-	Gives the name “textract-analysis-example” and click on	“Create”.
+	Gives the name “ --- ” and click on	“Create”.
 
 
 
