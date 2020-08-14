@@ -4,21 +4,32 @@ for the given formats .png,.jpg,.pdf in the s3.
 use the src ---> lamnda_function.py to extract.
 But first you need to config s3,lambda,layer,iam.
 
+
+
+
 Lambda Layer:
+
 	First download the boto3 layer.
+	
 	click lambda ---> layer
+	
 	And fill the details
 		Name of the layer
 		upload the boto3-layer zip using zip upload
 		select compitable runtime as python 3.7
 		And click create.
 
+
 Create S3:
+
 	Go to the S3 bucket area. Just click on “Services” then “S3”
+	
 	Gives the name “textract-analysis-example” and click on	“Create”.
 
 
+
 Lambda Function:
+
 	Go to “Services”, then “Lambda”
 
 	Click on “Functions” in the sided menu and then click on 	“Create function”
