@@ -22,37 +22,37 @@ Lambda Layer:
 
 Create S3:
 
-	Go to the S3 bucket area. Just click on “Services” then “S3”
+	Go to the S3 bucket area. Just click on â€œServicesâ€ then â€œS3â€
 	
-	Gives the name “ --- ” and click on	“Create”.
+	Gives the name â€œ --- â€ and click on	â€œCreateâ€.
 
 
 
 Lambda Function:
 
-	Go to “Services”, then “Lambda”
+	Go to â€œServicesâ€, then â€œLambdaâ€
 
-	Click on “Functions” in the sided menu and then click on 	“Create function”
+	Click on â€œFunctionsâ€ in the sided menu and then click on 	â€œCreate functionâ€
 
-	Select “Use a blueprint” and search for “s3-get-object-	
-	python”
+	Select â€œUse a blueprintâ€ and search for â€œs3-get-object-	
+	pythonâ€
 
-	Select the option listed and click on “configure”
+	Select the option listed and click on â€œconfigureâ€
 	
-	Give a “Function name” and “Execution role”
+	Give a â€œFunction nameâ€ and â€œExecution roleâ€
 
 	Click--> create a new role from AWS policy templates
 
 	Select your S3 bucket that we already created
 	
-	Add “.pdf” at Suffix area. With this option, Lambda 	functions will run only when a PDF file was uploaded.
+	Add â€œ.pdfâ€ at Suffix area. With this option, Lambda 	functions will run only when a PDF file was uploaded.
 	(Later you can add more events in s3. follow this steps
 	Go to your s3 bucket--->click permision--->scroll & go for 	Events--->click events --->Add ---> here you can add more 	events like .jpg,.png) If you put this formats of files in 	your s3 bucket means this will trigger the lambda.)
 
 	
 	Enable trigger
 
-	Click on “Create function”
+	Click on â€œCreate functionâ€
 
 	After creating copy the lambda_fuction.py code from my	src.
 	And paste and save the lambda fuction.
@@ -66,7 +66,7 @@ IAM Role:(Add Textract, SNS, SQS and S3 permissions)
 	Click on attach policies
 
 	Add the following policies: 
-	“AmazonSQSFullAccess”	          “AmazonS3FullAccess”, 			“AmazonTextractFullAccess”, 	“AmazonSNSFullAccess”
+	â€œAmazonSQSFullAccessâ€	          â€œAmazonS3FullAccessâ€, 			â€œAmazonTextractFullAccessâ€, 	â€œAmazonSNSFullAccessâ€
 
 	Mark the checkbox of the listed option
 
@@ -80,17 +80,19 @@ Add boto3 layer:
 	
 	Go to your lambda function
 	
-	Click on “Layers”
+	Click on â€œLayersâ€
 		
-	Then “Add Layer”
+	Then â€œAdd Layerâ€
 	
 	Select your layer and give version name.
 
-	Click on “Add” then “Save”
+	Click on â€œAddâ€ then â€œSaveâ€
 
 
-	
-	
+For speech to text:
+
+		You can also use this same steps for setup speech to text ---> using transcribe instead of textract
+		But code wise you need to check lot.
 
 
 
