@@ -93,6 +93,12 @@ For speech to text:
 
 		You can also use this same steps for setup speech to text ---> using transcribe instead of textract
 		But code wise you need to check lot.
+		
+
+For Video to text:
+
+		You can also use this same steps for setup video to text ---> using Rekognition instead of textract
+		But code wise you need to check lot.
 
 
 
