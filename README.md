@@ -89,6 +89,21 @@ Add boto3 layer:
 	Click on “Add” then “Save”
 
 
+Testing:
+	
+	Finally, you can drop the file in s3
+	
+	
+For Log:
+
+	click - > monitoring in lambda function from there click →  cloud watch and see your log.
+
+
+Result:
+	
+	The final output will be stored in the .json format with the same file name of your file.	
+	
+	
 For speech to text:
 
 		You can also use this same steps for setup speech to text ---> using transcribe instead of textract
