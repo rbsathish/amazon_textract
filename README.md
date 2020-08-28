@@ -101,7 +101,9 @@ For Log:
 
 Result:
 	
-	The final output will be stored in the .json format with the same file name of your file.	
+	The final output will be stored in the .json format with the same file name of your file.
+	
+![alt text](https://github.com/rbsathish/amazon_textract/blob/master/Image/pdfextract.JPG)
 	
 	
 For speech to text:
